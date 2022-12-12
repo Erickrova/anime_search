@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        background: rgb(57,70,139);
+        background: linear-gradient(135deg, rgba(57,70,139,1) 0%, rgba(39,44,85,1) 100%);
+    }
+}
+.slider{
+    width: 95%;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 30s infinite alternate ease-in-out;
+      width:max-content;
+    }
+.slider li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    list-style: none;
+}
+.slider img{
+    display: block;
+    width: 100vw;
+    height: 400px;
+      
+  }
+  @keyframes cambio{
+      0%{transform: translateX(0);}
+      16%{transform: translateX(0);}
+      
+      17%{transform: translateX(-16.666%);}
+      33%{transform: translateX(-16.666%);}
+      
+      34%{transform: translateX(-33.333%);}
+      49%{transform: translateX(-33.333%);}
+      
+      50%{transform: translateX(-50%);}
+      66%{transform: translateX(-50%);}
+      
+      67%{transform: translateX(-66.666%);}
+      83%{transform: translateX(-66.666%);}
+
+      84%{transform: translateX(-83.333%);}
+      100%{transform: translateX(-83.333%);}
+  }
