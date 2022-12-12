@@ -1,13 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
+import Layout from "../components/Layout"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import AnimeCard from "../components/AnimeCard"
-import Buscador from "../components/Buscador"
-import Layout from "../components/Layout"
 
 
-const anime = () => {
+const Anime = () => {
     const [anime,setAnime] = useState({})
     
     const router = useRouter()
@@ -69,4 +67,4 @@ const anime = () => {
   )
 }
 
-export default anime
+export default Anime
