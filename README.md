@@ -20,7 +20,7 @@ In this repository you can see the frontend code.
 Clone this repository.
 
 ```
-git clone https://github.com/Erickrova/phears_frontend.git
+git clone https://github.com/Erickrova/anime_search.git
 ```
 
 After cloning this git repository you need to follow below steps.
